@@ -9,8 +9,8 @@ export const PERSONAL_INFO = {
   location: "London, UK",
   linkedin: "https://linkedin.com/in/amannsyed",
   github: "https://github.com/amannsyed",
-  resumeUrl: "/aman_syed_resume.pdf",
-  profileImageUrl: "/aman_profile.jpg", // Update this to your image path
+  resumeUrl: "./aman_syed_resume.pdf",
+  profileImageUrl: "./aman_profile.jpg", // Update this to your image path
   tagline: "Building production-grade LLM systems and ML pipelines on AWS. Specialising in RAG architectures, multi-agent orchestration, and GPU-accelerated inference.",
   subTagline: "Cut manual analysis time by 95%. Processing millions of articles daily. Deployed across OpenAI, Gemini, and Claude.",
   about: "Associate Data Scientist and AI/ML Engineer with 1.5+ years delivering production-grade LLM systems and ML data pipelines on AWS. I work across the full ML lifecycle — from prompt engineering and model evaluation through to inference optimisation and production serving.\n\nAt Penta Group I've built GPU-accelerated NLP pipelines processing 2–3 million daily articles, deployed RAG architectures with vector database search at sub-500ms latency, and reduced manual transcript analysis time by 95% through multi-agent orchestration. I work across OpenAI, Gemini, and Anthropic Claude.\n\nCore stack: Python · PyTorch · FastAPI · Docker · PostgreSQL · SageMaker",
