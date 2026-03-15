@@ -1,5 +1,6 @@
 
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { Mail, Github, Linkedin, BookOpen, Rocket, GraduationCap, MapPin } from 'lucide-react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
@@ -34,12 +35,29 @@ const App: React.FC = () => {
               About
               <div className="h-px bg-slate-200 flex-grow"></div>
             </h2>
-            <div className="prose prose-lg prose-slate max-w-none">
-              {PERSONAL_INFO.about.split('\n').map((paragraph, idx) => (
-                <p key={idx} className="mb-4 text-slate-700 leading-relaxed">
-                  {paragraph}
-                </p>
-              ))}
+            <div className="max-w-none">
+              <ReactMarkdown
+                components={{
+                  p: ({node, ...props}) => <p className="mb-4 text-slate-700 leading-relaxed text-lg" {...props} />,
+                  strong: ({node, ...props}) => <strong className="font-bold text-slate-900" {...props} />
+                }}
+              >
+                {PERSONAL_INFO.about}
+              </ReactMarkdown>
+
+              <div className="mt-8 pt-6 border-t border-slate-200">
+                <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Core Stack</h3>
+                <div className="flex flex-wrap gap-2.5">
+                  {PERSONAL_INFO.coreStack.map((tech, idx) => (
+                    <span 
+                      key={idx} 
+                      className="px-4 py-2 bg-white border border-slate-200 text-slate-700 rounded-lg text-sm font-medium shadow-sm hover:border-indigo-300 hover:text-indigo-600 hover:shadow-md transition-all cursor-default"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
