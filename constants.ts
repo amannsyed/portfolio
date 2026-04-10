@@ -13,9 +13,9 @@ export const PERSONAL_INFO = {
   profileImageUrl: "./aman_profile.jpg", // Update this to your image path
   tagline: "Building production-grade LLM systems and ML pipelines on AWS. Specialising in RAG architectures, multi-agent orchestration, and GPU-accelerated inference.",
   subTagline: "Cut manual analysis time by 95%. Processing millions of articles daily. Deployed across OpenAI, Gemini, and Claude.",
-  about: "**Associate Data Scientist** and **AI/ML Engineer** with **1.5+ years** delivering production-grade LLM systems and ML data pipelines on AWS. I work across the full ML lifecycle — from prompt engineering and model evaluation through to inference optimisation and production serving.\n\nAt Penta Group I've built **GPU-accelerated NLP pipelines** processing 2–3 million daily articles, deployed **RAG architectures** with vector database search at sub-500ms latency, and reduced manual transcript analysis time by 95% through **multi-agent orchestration**. I work across OpenAI, Gemini, and Anthropic Claude.",
+  about: "**Associate Data Scientist** and **AI/ML Engineer** with **1.5+ years** delivering production-grade LLM systems and ML data pipelines on AWS. I work across the full ML lifecycle — context engineering, prompt engineering, model evaluation, inference optimisation, and production serving.\n\nAt Penta Group I've built **GPU-accelerated NLP pipelines** processing 2–3 million daily articles, deployed **RAG architectures** with vector database search at sub-500ms latency, and reduced manual transcript analysis time by 95% through **multi-agent orchestration**. I work across OpenAI, Gemini, and Anthropic Claude.",
   coreStack: ["Python", "PyTorch", "FastAPI", "Docker", "PostgreSQL", "SageMaker"],
-  footerText: "Specialising in RAG architectures and multi-agent AI systems — building data intelligence tools for complex enterprise challenges."
+  footerText: "Specialising in RAG architectures, context engineering, and multi-agent AI systems — building data intelligence tools for enterprise challenges."
 };
 
 export const EXPERIENCES: Experience[] = [
@@ -25,11 +25,16 @@ export const EXPERIENCES: Experience[] = [
     location: "London",
     period: "Oct 2024 – Present",
     achievements: [
+      "Developed conversational RAG system with SSE streaming, context engineering achieving 62% content reduction, and adaptive LLM routing — reducing LLM costs by 60%.",
+      "Built MCP server exposing 5 AI-client tools (hybrid search, vector search, entity search, RAG Q&A) over SSE with JWT authentication.",
+      "Engineered hybrid search engine fusing vector (pgvector HNSW), full-text (tsvector), and NER entity search with reciprocal rank fusion; implemented two-tier cache and per-user rate limiting.",
       "Scaled GPU-accelerated NLP pipeline to process 2–3 million daily articles via SQS-driven workers running GLiNER NER and EmbeddingGemma-300m on NVIDIA GPUs; deployed pgvector HNSW-indexed vector database search with daily-partitioned PostgreSQL tables on AWS ECS.",
       "Deployed RAG-powered AI Narrative engine generating sentiment-driven narratives for automated PowerPoint presentations across 16 client-facing modules used in daily briefings; engineered async retrieval using K-Means/HDBSCAN clustering with MMR diversity and Parquet-based embedding caching.",
       "Reduced manual transcript analysis time by 95% (20 hrs → under 5 min) by orchestrating a multi-agent NLP platform processing text, audio, and video inputs via Rev AI speech-to-text and 3-LLM consensus speaker extraction (Gemini/OpenAI/Claude).",
       "Achieved 92% precision in quote extraction via a 3-stage LLM pipeline with composite quality scoring across context, specificity, and clarity.",
       "Improved sentiment model accuracy to 71% weighted F1 on 1,000 human-labeled articles by evaluating 33+ prompt configurations across 6 LLMs and benchmarking Llama 3.1/3.2 fine-tuning vs zero-shot approaches.",
+      "Automated client newsletter curation via summarization pipeline processing 2,000+ articles per portfolio using multi-provider LLM architecture with multi-model A/B testing.",
+      "Productionized AI web scraper adopted by engineering team with 9-step HTML cleaning (70–80% size reduction) and 4-tier heuristic validation.",
       "Achieved 3x throughput improvement and subsecond latency by deploying BERT-based models as serverless SageMaker inference endpoints with dynamic batching.",
       "Delivered 5x faster file ingestion across all internal tools via chunked-transfer upload system over parallel WebSockets."
     ]
