@@ -65,28 +65,51 @@ export const EXPERIENCES: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
-    title: "Spotify Hit Prediction Model",
-    description: "Built an ML model predicting song popularity with 83% accuracy using the Top 200 Spotify Songs dataset. Evaluated multiple classification approaches and formulated recommendations to inform licensing cost strategy.",
-    tech: ["Python", "Scikit-learn", "Keras", "NumPy"],
-    period: "Sep – Dec 2023"
+    title: "Finance Flow",
+    description: "Full-stack personal finance suite with a React 19 dashboard featuring analytics, budgets, dark mode, and Google Sheets sync. Backend auto-detects 6 UK bank CSV formats and provides live exchange rate conversion.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Recharts", "Vite"],
+    period: "2024 – Present",
+    github: "https://github.com/amannsyed/finance-flow",
+    liveUrl: "https://amannsyed.github.io/finance-flow/"
   },
   {
-    title: "Real-Time Sign Language Recognition",
-    description: "Built a CNN-based computer vision model interpreting sign language gestures in real-time, enabling instant communication for users without specialist hardware.",
-    tech: ["Python", "OpenCV", "Keras", "TensorFlow"],
-    period: "Jun – Aug 2021"
+    title: "Bank CSV Conversion API",
+    description: "FastAPI microservice using the Strategy Pattern to auto-detect and normalise bank statements from Amex, Revolut, Monzo, Starling, and Bank of Scotland into a unified schema. Proxies Google Sheets CRUD and Frankfurter exchange rates.",
+    tech: ["Python", "FastAPI", "Google Sheets API", "Render"],
+    period: "2024 – Present",
+    github: "https://github.com/amannsyed/convert_transaction"
   },
   {
-    title: "Text Analysis & OCR Web App",
-    description: "Full-stack web application for image text extraction using an integrated Tesseract OCR engine — users upload images and receive recognised, structured text output.",
-    tech: ["Node.js", "MongoDB", "Express", "Tesseract"],
-    period: "Oct 2021 – May 2023"
+    title: "Knock Knock Physio",
+    description: "Production business website for a mobile physiotherapy practice — featuring online appointment booking, WhatsApp integration, transparent pricing plans, patient testimonials, and a protected admin dashboard.",
+    tech: ["React", "TypeScript", "Vite", "GitHub Pages"],
+    period: "2024",
+    github: "https://github.com/amannsyed/knock-knock-physio",
+    liveUrl: "https://knockknockphysio.co.uk/"
   },
   {
-    title: "Image Segmentation",
-    description: "Neural network project segmenting images into semantic classes using cv2 for preprocessing and augmentation.",
-    tech: ["Python", "TensorFlow", "OpenCV"],
-    period: "Jan – Apr 2022"
+    title: "AI Job Application Assistant",
+    description: "Intelligent job application assistant using Gemini AI for resume enhancement, interview preparation, and application optimisation — with PDF and DOCX document processing.",
+    tech: ["React", "TypeScript", "Google Gemini API", "pdfjs-dist", "mammoth"],
+    period: "2024",
+    github: "https://github.com/amannsyed/ai-job-application-assistant",
+    liveUrl: "https://amannsyed.github.io/ai-job-application-assistant/"
+  },
+  {
+    title: "AI Code Reviewer",
+    description: "AI-powered code review tool leveraging Google Gemini to detect bugs, assess code quality, and suggest optimisations with real-time feedback and syntax highlighting.",
+    tech: ["React", "TypeScript", "Google Gemini API", "Vite"],
+    period: "2024",
+    github: "https://github.com/amannsyed/ai-code-reviewer",
+    liveUrl: "https://amannsyed.github.io/ai-code-reviewer/"
+  },
+  {
+    title: "GCP Drive Manager",
+    description: "Zero-backend Google Drive manager using the browser's Web Crypto API to sign JWTs client-side for OAuth authentication. Browse, search, and manage Drive file permissions entirely in-browser.",
+    tech: ["React", "TypeScript", "Web Crypto API", "Google Drive API"],
+    period: "2024",
+    github: "https://github.com/amannsyed/gcp-drive",
+    liveUrl: "https://amannsyed.github.io/gcp-drive/"
   }
 ];
 

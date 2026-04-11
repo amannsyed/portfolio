@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Mail, Github, Linkedin, BookOpen, Rocket, GraduationCap, MapPin } from 'lucide-react';
+import { Mail, Github, Linkedin, BookOpen, Rocket, GraduationCap, MapPin, ExternalLink } from 'lucide-react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import ExperienceItem from './components/ExperienceItem';
@@ -86,19 +86,31 @@ const App: React.FC = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {PROJECTS.map((project, idx) => (
-                <div key={idx} className="p-6 bg-white border border-slate-100 rounded-2xl hover:shadow-xl hover:border-indigo-100 transition-all group">
+                <div key={idx} className="p-6 bg-white border border-slate-100 rounded-2xl hover:shadow-xl hover:border-indigo-100 transition-all group flex flex-col">
                   <div className="flex justify-between items-start mb-4">
                     <Rocket className="text-indigo-600" size={20} />
                     <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">{project.period}</span>
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors mb-2">{project.title}</h3>
                   <p className="text-slate-600 text-sm mb-4 leading-relaxed">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map(t => (
                       <span key={t} className="px-2 py-1 bg-slate-50 text-slate-500 rounded text-[10px] font-bold uppercase border border-slate-100">
                         {t}
                       </span>
                     ))}
+                  </div>
+                  <div className="flex items-center gap-4 mt-auto pt-4 border-t border-slate-100">
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
+                        <Github size={14} /> Source
+                      </a>
+                    )}
+                    {project.liveUrl && (
+                      <a href={project.liveUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-indigo-600 transition-colors">
+                        <ExternalLink size={14} /> Live Demo
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}

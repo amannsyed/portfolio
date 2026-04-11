@@ -25,6 +25,8 @@ export interface Project {
   description: string;
   tech: string[];
   period: string;
+  github?: string;
+  liveUrl?: string;
 }
 
 export interface Publication {
