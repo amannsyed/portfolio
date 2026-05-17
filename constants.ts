@@ -133,7 +133,7 @@ export const EDUCATIONS: Education[] = [
     degree: "MSc Statistics with Data Science",
     institution: "The University of Edinburgh",
     location: "Edinburgh",
-    grade: "",
+    grade: "2:2 Pass",
     courses: ["Applied Machine Learning", "Cloud Programming", "Advanced Database Systems", "Bayesian Data Analysis", "Statistical Programming in R"]
   },
   {
