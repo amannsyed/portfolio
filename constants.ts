@@ -65,6 +65,21 @@ export const EXPERIENCES: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
+    title: "News RAG Pipeline",
+    description: "Multi-provider news RAG pipeline with hybrid retrieval (dense vector, full-text, NER entity search) and Reciprocal Rank Fusion. Features SSE-streamed Claude chat with citation grounding, Docker memory guardrails, MCP server, React UI, and evaluation monitoring.",
+    tech: ["Python", "FastAPI", "PostgreSQL/pgvector", "Docker", "Claude (Bedrock/Vertex)", "EmbeddingGemma", "GLiNER", "React"],
+    period: "2025 – Present",
+    github: "https://github.com/amannsyed/News-RAG"
+  },
+  {
+    title: "UK Visa Sponsor Dashboard",
+    description: "High-performance dashboard for 140,000+ UK visa sponsor records with fuzzy search (Fuse.js), dark mode, favorites, CSV export (filtered + full), shareable URL state, and Recharts visualisations — auto-updated daily via GitHub Actions.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Recharts", "Fuse.js", "Vite", "GitHub Actions"],
+    period: "2024 – Present",
+    github: "https://github.com/amannsyed/explore-opportunities",
+    liveUrl: "https://amannsyed.github.io/explore-opportunities/"
+  },
+  {
     title: "Finance Flow",
     description: "Full-stack personal finance suite with a React 19 dashboard featuring analytics, budgets, dark mode, and Google Sheets sync. Backend auto-detects 6 UK bank CSV formats and provides live exchange rate conversion.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Recharts", "Vite"],
