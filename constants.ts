@@ -9,7 +9,7 @@ export const PERSONAL_INFO = {
   location: "London, UK",
   linkedin: "https://linkedin.com/in/amannsyed",
   github: "https://github.com/amannsyed",
-  resumeUrl: "./aman_syed_resume.pdf",
+  resumeUrl: "./aman_syed_cv.pdf",
   profileImageUrl: "./aman_profile.jpg",
   tagline: "Building production-grade AI platforms and ML pipelines on AWS. Specialising in hybrid search, RAG architectures, multi-agent orchestration, and GPU-accelerated inference.",
   subTagline: "Shipped 15+ production AI endpoints. Processing millions of articles daily. Deployed across OpenAI, Gemini, Claude, and Vertex AI.",
